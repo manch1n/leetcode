@@ -10,5 +10,5 @@ branch=${1}
 suffix=${2}
 [ "$#" -lt 2 ]&&echo "please select a branch and the file suffix"&&exit 0
 git add *.${suffix}
-git commit -m\'${date}\'
+git commit -m"${date}"
 git push origin ${branch}
